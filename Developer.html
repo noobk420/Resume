@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.outer-heading{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+h1{
+    font-size: 45px;
+
+}
+.inner-heading{
+    border: 1px solid #ddd;
+    height: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    overflow: hidden;
+    font-size: 45px;
+}
+.inner-heading  span{
+position: relative;
+color: red;
+animation: ani 10s ease infinite;
+}
+
+@keyframes ani {
+    0%,100%{
+        top: 0;
+    }
+    20%{
+        top: 0;
+    }
+    25%{
+        top: -50px;
+    }
+    45%{
+        top: -50px;
+    }
+    50%{
+        top: -100px;
+    }
+    70%{
+        top: -100px;
+    }
+    75%{
+        top: -150px;
+    }
+    95%{
+        top: -150px;
+    }
+}
+.h1{ 
+    align-items: center;
+    font-size: 45px;
+    justify-content: center;
+}
+
+.h2 img{
+    float: right;
+    margin: 10px;
+    width: 700px;
+    height: 800px;
+    line-height: 50px;
+    overflow: hidden;
+}
+
+        /* Loader styles */
+        .loader {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(255, 255, 255, 0.8);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 9999;
+        }
+        .loader img {
+          width: 100px; /* Adjust size as needed */
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="loader" id="loader">
+        <img src="Dual Ball-1s-200px.gif" alt="Loading...">
+      </div>
+    <div class="image">
+        
+        <row class="h2">
+            <img id="img" src="myimage2.jpg" alt="">
+        </row>
+    </div>
+    <div class="outer-heading">
+<h1>
+I AM,
+<div class="inner-heading">
+<span>
+    FRONT-END DEVELOPER <br>
+    WEB DESIGNER <br>
+    BECK-END DEVELOPER <br>
+    JAVA DEVELOPER <br>
+
+</span>
+</div>
+</h1>
+
+    </div>
+    <script>
+        // Simulate loading delay for 0.5 seconds
+        setTimeout(function(){
+          // Hide loader
+          document.getElementById('loader').style.display = 'none';
+          // Show content
+          document.getElementById('content').style.display = 'block';
+        }, 500);
+      </script>
+</body>
+</html>

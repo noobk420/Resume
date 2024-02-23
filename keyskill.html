@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Key Skills</title>
+
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .skill {
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .skill:hover {
+    transform: scale(1.05);
+  }
+  
+  .skill h2 {
+    margin-top: 0;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .skill:hover h2 {
+    color: #007bff;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    color: #555;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  li:hover {
+    color: #007bff;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+    /* Loader styles */
+    .loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+    .loader img {
+      width: 100px; /* Adjust size as needed */
+    }
+  </style>
+</head>
+<body>
+    <div class="loader" id="loader">
+        <img src="Dual Ball-1s-200px.gif" alt="Loading...">
+      </div>
+
+      <header>
+        <h1>Key Skills</h1>
+      </header>
+    
+      <section class="skills-container">
+        <div class="skill">
+          <h2>Programming Languages</h2>
+          <ul>
+            <li>Java</li>
+            <li>PHP</li>
+          </ul>
+        </div>
+        <div class="skill">
+          <h2>Databases</h2>
+          <ul>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+          </ul>
+        </div>
+        <div class="skill">
+          <h2>Frameworks</h2>
+          <ul>
+            <li>JSP Servlet</li>
+            <li>Hibernate</li>
+          </ul>
+        </div>
+        <div class="skill">
+          <h2>Others</h2>
+          <ul>
+            <li>Knowledge of AWS</li>
+            <li>Cloud Computing</li>
+          </ul>
+        </div>
+      </section>
+    
+      <footer>
+        <p>&copy; 2024 Key Skills</p>
+      </footer>
+  
+  <script>
+    // Simulate loading delay for 0.5 seconds
+    setTimeout(function(){
+      // Hide loader
+      document.getElementById('loader').style.display = 'none';
+      // Show content
+      document.getElementById('content').style.display = 'block';
+    }, 500);
+  </script>
+
+</body>
+</html>

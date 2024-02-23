@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Profile</title>
+ 
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 150px); /* Adjust as needed */
+  }
+  
+  .profile-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .profile-card img {
+    width: 150px;
+    border-radius: 50%;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+    /* Loader styles */
+    .loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+    .loader img {
+      width: 100px; /* Adjust size as needed */
+    }
+  </style>
+</head>
+<body>
+    <div class="loader" id="loader">
+        <img src="Dual Ball-1s-200px.gif" alt="Loading...">
+      </div>
+
+  <header>
+    <h1>Developer Profile</h1>
+  </header>
+
+  <section class="profile-container">
+    <div class="profile-card">
+      <img src="../Myimage.jpg" alt="Profile Picture">
+      <h2>Dinesh Kumar</h2>
+      <p>Full Stack Developer</p>
+      <p>kdinesh72453@gmail.com</p>
+      <button id="contact-btn">Contact Me</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Developer Profiles</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById("contact-btn").addEventListener("click", function() {
+    alert("Contact information: Name: Dinesh Kumar, Contact Number:7820022627, Email:kdinesh72453@gmail;.com ");
+   
+  });
+  
+    // Simulate loading delay for 0.5 seconds
+    setTimeout(function(){
+      // Hide loader
+      document.getElementById('loader').style.display = 'none';
+      // Show content
+      document.getElementById('content').style.display = 'block';
+    }, 500);
+  </script>
+</body>
+</html>
